@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+    background-color: #142140;
+    color: #1A1D24;
+    line-height: 1.6;
+}
+
+.navheader {
+    background-color: #142140;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+}
+
+.navheader h1 {
+    font-family: "Anton", "Impact", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #D4A72C;
+}
+
+.section-title {
+    font-family: "Anton", "Impact", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-text {
+    max-width: 36rem;
+    margin-bottom: 2.5rem;
+}
+
+.training-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 5rem 0 4rem;
+    background-image: url('img/two.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.training-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(20, 33, 64, 0.35), rgba(20, 33, 64, 0.95));
+}
+
+.training-hero .container {
+    position: relative;
+}
+
+.hero-tag {
+    color: #D4A72C;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.hero-title {
+    font-family: "Anton", "Impact", sans-serif;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    max-width: 34rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.courses {
+    background-color: #142140;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.courses .section-text {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.course-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E2F55;
+    border: 1px solid #D4A72C;
+    border-radius: 20px;
+    padding: 1.75rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(179, 38, 30, 0.3);
+}
+
+.level {
+    align-self: flex-start;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.beginner {
+    background-color: #D4A72C;
+    color: #1A1D24;
+}
+
+.intermediate {
+    border: 1px solid #D4A72C;
+    color: #D4A72C;
+}
+
+.advanced {
+    background-color: #B3261E;
+    color: #fff;
+}
+
+.course-card h3 {
+    font-family: "Anton", "Impact", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.course-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.course-info {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 700;
+    color: #D4A72C;
+}
+
+.schedule {
+    background-color: #EFEDE8;
+    padding: 5rem 0;
+}
+
+.schedule .section-text {
+    color: #5B6070;
+}
+
+.schedule-table {
+    min-width: 800px;
+    text-align: center;
+    margin: 0;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 1rem;
+    border-color: #D8D4CA;
+    background-color: #fff;
+    color: #1A1D24;
+}
+
+.schedule-table thead th {
+    background-color: #142140;
+    color: #fff;
+    font-family: "Anton", "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.schedule-table tbody th {
+    background-color: #1E2F55;
+    color: #D4A72C;
+    white-space: nowrap;
+}
+
+.schedule-table td.open-gym {
+    background-color: #F3E3B5;
+    color: #5B6070;
+    font-style: italic;
+}
+
+.faq {
+    background-color: #EFEDE8;
+    padding: 0 0 5rem;
+}
+
+.faq-list {
+    max-width: 48rem;
+    margin-top: 2rem;
+}
+
+.faq-list details {
+    background-color: #fff;
+    border-left: 6px solid #1E2F55;
+    margin-bottom: 0.75rem;
+}
+
+.faq-list details[open] {
+    border-left-color: #B3261E;
+}
+
+.faq-list summary {
+    padding: 1.1rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.faq-list details p {
+    padding: 0 1.5rem 1.25rem;
+    margin: 0;
+    color: #5B6070;
+}
+
+.site-footer {
+    background-color: #142140;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 2rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+}

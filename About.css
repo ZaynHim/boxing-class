@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Colors & fonts ===== */
+:root {
+  --blue-corner: #1E2F55;
+  --blue-deep: #142140;
+  --red-corner: #B3261E;
+  --belt-gold: #D4A72C;
+  --canvas: #EFEDE8;
+  --ink: #1A1D24;
+  --muted: #5B6070;
+
+  --font-display: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.navheader {
+  background-color: #142140;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+}
+
+.navheader h1 {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #D4A72C;
+}
+
+/* ===== Shared headings ===== */
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.section-intro {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 36rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Page hero ===== */
+.legend-hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 6rem 0 4rem;
+  color: #fff;
+  background:
+    linear-gradient(0deg, rgba(20, 33, 64, 0.95) 0%, rgba(20, 33, 64, 0.4) 70%),
+    url("img/legend.jpg") center / cover no-repeat;
+  background-color: var(--blue-deep);
+}
+
+.legend-nickname {
+  color: var(--belt-gold);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.legend-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.legend-intro {
+  max-width: 36rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* ===== Profile ===== */
+.profile {
+  background: var(--belt-gold);
+  padding: 4rem 0;
+}
+
+.profile-record {
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 18vw, 11rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.profile-caption { font-weight: 700; margin: 0; }
+
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin: 0;
+  border-top: 3px solid var(--ink);
+}
+
+.profile-list > div {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(26, 29, 36, 0.35);
+}
+
+.profile-list dt { font-weight: 500; font-size: 0.95rem; }
+.profile-list dd { font-family: var(--font-display); font-size: 1.6rem; margin: 0; }
+
+/* ===== Timeline ===== */
+.timeline-section { padding: 5rem 0; }
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0;
+  border-left: 4px solid var(--red-corner);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 2.5rem 2rem;
+  max-width: 44rem;
+}
+
+.timeline li:last-child { padding-bottom: 0; }
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0.4rem;
+  width: 20px;
+  height: 20px;
+  background: var(--canvas);
+  border: 4px solid var(--red-corner);
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--red-corner);
+}
+
+.timeline h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 0 0.25rem;
+}
+
+.timeline p { color: var(--muted); margin: 0; }
+
+/* ===== How he fought ===== */
+.style-section {
+  background: var(--blue-corner);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.style-card {
+  height: 100%;
+  border-top: 4px solid var(--belt-gold);
+  padding-top: 1.25rem;
+}
+
+.style-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.style-card p { color: rgba(255, 255, 255, 0.8); margin: 0; }
+
+/* ===== Compare table ===== */
+.compare-section { padding: 5rem 0 3rem; }
+
+.compare-section .section-intro,
+.facts-section .section-intro { color: var(--muted) !important; }
+
+.compare-table {
+  background: #fff;
+  min-width: 560px;
+}
+
+.compare-table thead th {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: #fff;
+}
+
+.compare-table tbody th { font-weight: 700; width: 20%; }
+
+/* ===== Strange facts ===== */
+.facts-section { padding: 3rem 0 5rem; }
+
+.facts { max-width: 48rem; }
+
+.facts details {
+  background: #fff;
+  border-left: 6px solid var(--blue-corner);
+  margin-bottom: 0.75rem;
+}
+
+.facts details[open] { border-left-color: var(--red-corner); }
+
+.facts summary {
+  padding: 1.1rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.facts summary:focus-visible {
+  outline: 3px solid var(--belt-gold);
+  outline-offset: 2px;
+}
+
+.facts details p {
+  padding: 0 1.5rem 1.25rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--blue-deep);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.footer-inner p {
+  margin: 0;
+}
+
+/* ===== Animation ===== */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 575px) {
+  .profile-list { grid-template-columns: 1fr; }
+}

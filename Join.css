@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+  background-color: #142140;
+  color: #d9dce5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navheader {
+  background-color: #142140;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+}
+
+.navheader h1 {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #D4A72C;
+}
+
+.hero {
+  padding: 160px 0 120px;
+}
+
+.small-title {
+  color: #d4a72c;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hero-title {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 5px 0 30px;
+}
+
+.hero-text {
+  max-width: 700px;
+  font-size: 21px;
+  line-height: 1.8;
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section-text {
+  max-width: 650px;
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 10px 0 40px;
+}
+
+.plans {
+  padding: 100px 0;
+}
+
+.plans-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.plan {
+  flex: 1;
+  background-color: #1d2d50;
+  padding: 40px 35px;
+  border-radius: 6px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.price {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 75px;
+  color: #d4a72c;
+  margin: 10px 0 25px;
+}
+
+.price span {
+  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  color: #9aa2b8;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.plan li {
+  padding: 12px 0;
+  border-bottom: 1px solid #2a3a5e;
+}
+
+.popular {
+  background-color: #d4a72c;
+  color: #1a1c26;
+  padding: 55px 35px;
+}
+
+.popular h3,
+.popular .price,
+.popular .price span {
+  color: #1a1c26;
+}
+
+.popular li {
+  border-bottom: 1px solid rgba(26, 28, 38, 0.2);
+  font-weight: 500;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #1a1c26;
+  color: #d4a72c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d4a72c;
+  color: #1a1c26;
+  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 40px;
+  border: 2px solid #d4a72c;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.plan .btn {
+  width: 100%;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #d4a72c;
+}
+
+.btn-outline:hover {
+  background-color: #d4a72c;
+  color: #1a1c26;
+}
+
+.btn-dark {
+  background-color: #1a1c26;
+  border-color: #1a1c26;
+  color: #d4a72c;
+}
+
+.signup {
+  background-color: #d4a72c;
+  color: #1a1c26;
+  padding: 100px 0;
+}
+
+.signup-box {
+  display: flex;
+  gap: 60px;
+}
+
+.signup-info {
+  flex: 1;
+}
+
+.signup .section-title {
+  color: #1a1c26;
+}
+
+.signup-info p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+.info {
+  border-top: 3px solid #1a1c26;
+  margin-top: 35px;
+}
+
+.info div {
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(26, 28, 38, 0.3);
+}
+
+.info h3 {
+  font-family: "Anton", "Impact", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+form {
+  flex: 1.2;
+  background-color: #142140;
+  padding: 45px;
+  border-radius: 6px;
+}
+
+form label {
+  display: block;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: #0e1830;
+  border: 2px solid #0e1830;
+  border-radius: 4px;
+  color: white;
+  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #d4a72c;
+}
+
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-group input {
+  width: auto;
+  margin: 0 5px 0 0;
+}
+
+.radio-group label {
+  display: inline;
+  font-weight: 400;
+  color: #d9dce5;
+  margin-right: 18px;
+}
+
+.check {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.check input {
+  width: auto;
+  margin: 0;
+}
+
+.check label {
+  font-weight: 400;
+  font-size: 15px;
+  color: #d9dce5;
+  margin: 0;
+}
+
+form .btn {
+  width: 100%;
+}
+
+.faq {
+  padding: 100px 0;
+}
+
+details {
+  max-width: 900px;
+  padding: 22px 0;
+  border-bottom: 1px solid #2a3a5e;
+}
+
+summary {
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+summary:hover {
+  color: #d4a72c;
+}
+
+details p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.site-footer {
+  background-color: #142140;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .plans-box {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .signup-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 90px 0 70px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+  }
+
+  form {
+    padding: 30px 20px;
+  }
+}
