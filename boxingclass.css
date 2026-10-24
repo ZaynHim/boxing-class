@@ -1,11 +1,15 @@
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: #D4A72C;
 }
 
 body {
-    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
     background-color: #142140;
 }
 
@@ -25,9 +29,7 @@ body {
     font-family: "Anton", "Impact", sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin: 0;
+    line-height: 1;
 }
 
 .nav-links {
@@ -46,14 +48,6 @@ body {
     text-decoration: none;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    color: #D4A72C;
-}
-
-/* HEADER END */
-/* THEME BANNER START */
-
 .imagetheme {
     position: relative;
     height: 90vh;
@@ -71,7 +65,7 @@ body {
 }
 
 .texttheme {
-    position: absolute;
+    position:relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -194,16 +188,4 @@ body {
     }
 }
 
-/* ANIMATION END */
 
-@media (max-width: 768px) {
-    .showcase-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "video";
-    }
-
-    .video-wrapper {
-        height: 250px;
-    }
-}
