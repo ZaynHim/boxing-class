@@ -34,4 +34,6 @@ IronFist Boxing is a multi-section landing page for a fictional boxing gym. The 
 
 ## Preview
 
+<img width="1863" height="897" alt="Screenshot 2026-10-31 064239" src="https://github.com/user-attachments/assets/b69b23ba-3bd0-4241-88ee-b4e8eea022b9" />
+
 Open `boxing-class/boxingclass.html` in any browser to view the page locally.
