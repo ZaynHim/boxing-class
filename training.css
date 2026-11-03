@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
     background-color: #142140;
     color: #1A1D24;
     line-height: 1.6;
+      font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+
 }
 
 .navheader {
@@ -76,16 +77,6 @@ body {
     color: #fff;
 }
 
-.training-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(20, 33, 64, 0.35), rgba(20, 33, 64, 0.95));
-}
-
-.training-hero .container {
-    position: relative;
-}
 
 .hero-tag {
     color: #D4A72C;
@@ -114,10 +105,6 @@ body {
     background-color: #142140;
     color: #fff;
     padding: 5rem 0;
-}
-
-.courses .section-text {
-    color: rgba(255, 255, 255, 0.75);
 }
 
 .course-card {
@@ -228,38 +215,7 @@ body {
     font-style: italic;
 }
 
-.faq {
-    background-color: #EFEDE8;
-    padding: 0 0 5rem;
-}
 
-.faq-list {
-    max-width: 48rem;
-    margin-top: 2rem;
-}
-
-.faq-list details {
-    background-color: #fff;
-    border-left: 6px solid #1E2F55;
-    margin-bottom: 0.75rem;
-}
-
-.faq-list details[open] {
-    border-left-color: #B3261E;
-}
-
-.faq-list summary {
-    padding: 1.1rem 1.5rem;
-    font-weight: 700;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.faq-list details p {
-    padding: 0 1.5rem 1.25rem;
-    margin: 0;
-    color: #5B6070;
-}
 
 .site-footer {
     background-color: #142140;
@@ -283,13 +239,7 @@ body {
     animation: fadeUp 1s forwards;
 }
 
-.delay-1 {
-    animation-delay: 0.2s;
-}
 
-.delay-2 {
-    animation-delay: 0.4s;
-}
 
 @keyframes fadeUp {
     from {
@@ -302,12 +252,3 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 4rem;
-    }
-
-    .section-title {
-        font-size: 2.25rem;
-    }
-}

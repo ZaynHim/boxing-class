@@ -5,15 +5,14 @@
 }
 
 body {
-  font-family: "Barlow", "Segoe UI", Arial, sans-serif;
   background-color: #142140;
   color: #d9dce5;
   line-height: 1.6;
+    font-family: "Barlow", "Segoe UI", Arial, sans-serif;
+
 }
 
-a {
-  text-decoration: none;
-}
+
 
 .container {
   width: 85%;
@@ -92,14 +91,6 @@ a {
   animation: fadeUp 1s forwards;
 }
 
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
-}
-
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -117,6 +108,7 @@ a {
   white-space: nowrap;
   padding: 15px 0;
 }
+ /*لتعلم التحريك من الجنب ai تم  استعمال ال */
 
 .ticker p {
   display: inline-block;
@@ -137,6 +129,7 @@ a {
     transform: translateX(-100%);
   }
 }
+ /* ............................................................*/
 
 .section {
   padding: 110px 0;
@@ -173,7 +166,6 @@ a {
   overflow: hidden;
   border-radius: 6px;
   background-color: #1d2d50;
-  cursor: pointer;
 }
 
 .card img {
@@ -311,7 +303,7 @@ a {
   gap: 0.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .hero-title {
     font-size: 90px;
   }
@@ -335,16 +327,4 @@ a {
   }
 }
 
-@media (max-width: 600px) {
-  .hero {
-    padding: 90px 0 70px;
-  }
 
-  .hero-title {
-    font-size: 70px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
